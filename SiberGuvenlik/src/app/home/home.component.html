@@ -1,0 +1,91 @@
+<div class="container">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 align-items-end">
+        <div class="col-md-8 mt-3 pt-3">
+            <span class="h4 text-uppercase">SİBER GÜVENLİK TEST MERKEZİ</span>
+            <div>
+                <p class="mt-2 pt-2 " style="line-height: 27px;">Siber güvenlik farkındalığı son zamanlarda tüm dünyada
+                    önemini fazlasıyla kazanmaktadır. Bizde ülkemize bu konuda
+                    destek olmak için bir siber güvenlik farkındalık testi hazırladık. Bu test sonucunda siber güvenlik
+                    alanında
+                    ne kadar dikkatli ve özenli olduğunuzu ölçebileceksiniz. Ayrıca istatistiksel olarakda siber
+                    güvenlik
+                    farkındalığı hakkında analizler görebilirsiniz.
+                    Siber güvenlik farkındalık hakkında daha fazla bilgi almak için makaleler kısmını
+                        inceleyebilirsiniz.</p>
+                
+            </div>
+        </div>
+        <div class="col-md-4 ">
+            <div class="counter green">
+                <div class="counter-icon">
+                    <i class="fa fa-rocket"></i>
+                </div>
+                <h3>Bugün Testi Tamamlayan Kişi Sayısı</h3>
+                <span class="counter-value">{{total}}</span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <h4 class="mt-4 pt-4 text-uppercase">İL BAZINDA SİBER GÜVENLİK ORTALAMALARI</h4>
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr style="background-color:dimgray; color: white;">
+                            
+                            <th scope="col">Şehir</th>
+                            <th scope="col">Test Sonucu Ortalama</th>
+                            <th scope="col">Katılımcı Sayısı</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let suc of success">
+                           
+                            <td class="h6">{{suc.names}}</td>
+                            <td class="h6">{{suc.puan}}</td>
+                            <td class="h6">{{suc.sayac}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-12 mx-auto pt-4 mt-4">
+            <div class=" mb-3  mx-auto">
+                <div class="row g-0">
+                    <div class="col-md-4 mt-4">
+                        <img src="https://specials-images.forbesimg.com/imageserve/5e180c9d735f8c0007998956/960x0.jpg?fit=scale"
+                            alt="..." class="img-fluid" />
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Siber Güvenlik Farkındalığı İçin Dikkat Edilmesi Gerekenler</h5>
+                            <p><li class="card-text">
+                                Mümkün oldukça ortak ağları kullanmamaya özen gösterin, kullanmanız gerektiği
+                                durumlarda erişim sağladığınız web sayfalarında mutlaka https ifadesini kontrol edin.
+                            </li></p>
+                            <p><li class="card-text">
+                                Firmanızın size sağladığı güvenli erişim kanallarını (VPN gibi) kullanın.
+                            </li></p>
+                            <p> <li class="card-text">
+                                Basit şifreler kullanmayın, akılda kalıcı (masa-2-top-”resim” gibi) karmaşık ve tahmin
+                                edilemez şifreler kullanın.
+                            </li></p>
+                           <p><li class="card-text">
+                                Farklı platformlarda aynı şifreyi kullanmayın. Her platform için farklı bir şifre
+                                kullanın.
+                            </li></p>
+                            <p><li class="card-text">
+                                Düzenli yedekleme çalışmaları yapın ve yedeklerini farklı platformlarda şifreli olarak
+                                tutun.
+                            </li></p>
+                            <p> <li class="card-text">
+                                Mobil iletişim kanallarında size korku, heyecan, panik uyandıran ve güvenilir gibi
+                                görünen kaynaklara karşı dikkatli olun ve çevrenizdeki bilirkişilere danışın.
+                            </li></p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

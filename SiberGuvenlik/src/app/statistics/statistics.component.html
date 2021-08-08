@@ -1,0 +1,65 @@
+<div class="container py-5">  
+  <form class="form-group" id="searchForm">
+    <div class="container shadow">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 align-items-end pb-4"  >
+        <div class="col-md-12 mb-3">  <h3 class="text-center text-uppercase">İSTATİSTİKLER</h3>   </div>
+        <div class="col-md-3 col-sm-12 mt-3">
+          <h6>Cinsiyete Göre Sırala</h6>
+          <select class="form-control" [(ngModel)]="filterGender"  name="city" id="exampleFormControlSelect1"  >
+            <option value="">--Seçiniz--</option>
+            <option value="Kadın">Kadın</option>
+            <option value="Erkek">Erkek</option>
+          </select>
+        </div>
+        <div class="col-md-3  col-sm-12 mt-3">
+          <h6>Şehire Göre Sırala</h6>
+          <select class="form-control" [(ngModel)]="filterText" name="city" id="exampleFormControlSelect1"  >
+            <option *ngFor="let city of cities">{{city}}</option>
+          </select>
+        </div>
+        <div class="col-md-3  col-sm-12 mt-3">
+          <h6>Eğitim Seviyesine Göre Sırala</h6>
+          <select class="form-control" [(ngModel)]="filterEdu" name="city" id="exampleFormControlSelect1"  >
+            <option *ngFor="let edu of education">{{edu}}</option>
+          </select>
+        </div>
+        <div class="col-md-3  col-sm-12 mt-3">
+          <h6 >Yaşa Göre Sırala</h6>
+            <input class="form-control mb-0" style="height: calc(1.5em + .75rem + 2px);"type="number" [(ngModel)]="filterNumber"  name="age" min="10" max="100"   >            
+        </div>
+        <div class="col-md-3  col-sm-12 mt-3">
+          <div >
+            <input class="form-control btn btn-sm btn-outline-primary text" type="reset"  min="10" max="100"  value="SIFIRLA" style="background-color: #03BFB0; color: white;">            
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+ 
+  <table class="table table-bordered table-striped mt-5">  
+      <thead>  
+          <tr class="text-center text-uppercase">  
+              <th></th>
+              <th>AD</th>  
+              <th>SOYAD</th>  
+              <th>CİNSİYET</th>  
+              <th>ŞEHİR</th>  
+              <th>EĞİTİM SEVİYESİ</th>  
+              <th>YAŞ</th>  
+              <th>PUAN</th>  
+            </tr>  
+      </thead>  
+      <tbody>  
+        <tr *ngFor="let users of user| cityFilter:filterText| ageFilter:filterNumber|genderFilter:filterGender|educationFilter:filterEdu">  
+          <td>{{users.Id}}</td>
+          <td>{{users.name}}</td>
+          <td>{{users.surname}}</td>
+          <td>{{users.gender}}</td>
+          <td>{{users.city}}</td>
+          <td>{{users.educationLevel}}</td>
+          <td>{{users.age}}</td>
+          <td>{{users.score}}</td>
+        </tr>  
+      </tbody>  
+    </table>  
+  </div>  

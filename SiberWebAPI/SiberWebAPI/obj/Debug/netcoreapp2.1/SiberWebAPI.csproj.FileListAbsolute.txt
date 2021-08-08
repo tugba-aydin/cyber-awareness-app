@@ -1,0 +1,14 @@
+C:\Users\tugba\source\repos\SiberWebAPI\SiberWebAPI\bin\Debug\netcoreapp2.1\SiberWebAPI.deps.json
+C:\Users\tugba\source\repos\SiberWebAPI\SiberWebAPI\bin\Debug\netcoreapp2.1\SiberWebAPI.runtimeconfig.json
+C:\Users\tugba\source\repos\SiberWebAPI\SiberWebAPI\bin\Debug\netcoreapp2.1\SiberWebAPI.runtimeconfig.dev.json
+C:\Users\tugba\source\repos\SiberWebAPI\SiberWebAPI\bin\Debug\netcoreapp2.1\SiberWebAPI.dll
+C:\Users\tugba\source\repos\SiberWebAPI\SiberWebAPI\bin\Debug\netcoreapp2.1\SiberWebAPI.pdb
+C:\Users\tugba\source\repos\SiberWebAPI\SiberWebAPI\obj\Debug\netcoreapp2.1\SiberWebAPI.csprojAssemblyReference.cache
+C:\Users\tugba\source\repos\SiberWebAPI\SiberWebAPI\obj\Debug\netcoreapp2.1\SiberWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\tugba\source\repos\SiberWebAPI\SiberWebAPI\obj\Debug\netcoreapp2.1\SiberWebAPI.RazorAssemblyInfo.cache
+C:\Users\tugba\source\repos\SiberWebAPI\SiberWebAPI\obj\Debug\netcoreapp2.1\SiberWebAPI.RazorAssemblyInfo.cs
+C:\Users\tugba\source\repos\SiberWebAPI\SiberWebAPI\obj\Debug\netcoreapp2.1\SiberWebAPI.AssemblyInfoInputs.cache
+C:\Users\tugba\source\repos\SiberWebAPI\SiberWebAPI\obj\Debug\netcoreapp2.1\SiberWebAPI.AssemblyInfo.cs
+C:\Users\tugba\source\repos\SiberWebAPI\SiberWebAPI\obj\Debug\netcoreapp2.1\SiberWebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\tugba\source\repos\SiberWebAPI\SiberWebAPI\obj\Debug\netcoreapp2.1\SiberWebAPI.dll
+C:\Users\tugba\source\repos\SiberWebAPI\SiberWebAPI\obj\Debug\netcoreapp2.1\SiberWebAPI.pdb

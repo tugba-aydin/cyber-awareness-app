@@ -1,0 +1,10 @@
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+<div class="login">
+  <div class="form">
+    <h2>Yönetici Girişi</h2>
+    <input type="text" #username="ngModel" [(ngModel)]="model.username" name="username" placeholder="Kullanıcı Adı" style="width: 245px;">
+    <input type="password" #password="ngModel" [(ngModel)]="model.password" name="password" placeholder="Şifre" style="width: 245px;">
+    <input type="submit" value="Giriş" class="submit" style="margin-top: 15px;" (click)="addQuestions()">
+  </div>
+</div>
+</form>

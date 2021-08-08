@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body style="background-color:#555; height:100%;">
+  <div class=" wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+
+
+      <h2 class="active"> Katılımcı Bilgileri </h2>
+
+      <!-- Icon -->
+
+      <!-- Login Form -->
+      <form [formGroup]="userAddForm" (ngSubmit)="addUsers()" class="form-useradd">
+
+        <input type="text" id="name" class="fadeIn third" name="name" placeholder="Ad" formControlName="name"
+          style="width: 250px; height: 25px; background-color:white; border-style:solid; border-width: 2px; border-color: dimgray; margin-top: 20px;">
+        <input type="text" id="surname" class="fadeIn third" name="surname" placeholder="Soyad"
+          formControlName="surname"
+          style="width: 250px; height: 25px; background-color:white; border-style:solid; border-width: 2px; border-color: dimgray; margin-top: 20px;">
+        <input type="text" id="city" class="fadeIn second" name="city" placeholder="Şehir" formControlName="city"
+          style="width: 250px; height: 25px; background-color:white; border-style:solid; border-width: 2px; border-color: dimgray; margin-top: 20px;">
+        <input type="text" id="age" class="fadeIn third" name="age" placeholder="Yaş" formControlName="age"
+          style="width: 250px; height: 25px; background-color:white; border-style:solid; border-width: 2px; border-color: dimgray; margin-top: 20px;">
+        <input type="text" id="education" class="fadeIn third" name="education" placeholder="Eğitim Seviyesi"
+          formControlName="educationLevel"
+          style="width: 250px; height: 25px; background-color:white; border-style:solid; border-width: 2px; border-color: dimgray; margin-top: 20px;">
+        <div style="margin-top: 20px;">
+          <input type="radio" id="Kadın" value="Kadın" name="gender" formControlName="gender"><label for="Kadın"
+            class="light">Kadın</label>&nbsp;&nbsp;
+          <input type="radio" id="Erkek" value="Erkek" name="gender" formControlName="gender"><label for="Erkek"
+            class="light">Erkek</label>
+        </div>
+        <input type="submit" class="fadeIn fourth" value="İleri" style="margin-top: 20px;"  (click)="addUsers()" >
+      </form>
+
+    </div>
+  </div>
+</body>
+
+</html>

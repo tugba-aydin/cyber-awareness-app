@@ -1,0 +1,130 @@
+<div class="container-flush">
+  <div class="site__wrapper" #articleList>
+    <div class="grid" *ngFor="let item of articeleList| keyvalue">
+      <div class="card">
+        <div class="card__image">
+          <img [src]="item.value['img']" alt="">
+
+          <div class="card__overlay card__overlay--indigo">
+            <div class="card__overlay-content">
+
+              <p class="card__title"> {{item.value['title']}} </p>
+              <p class="card__p">
+              </p>
+              <ul class="card__meta card__meta--last">
+                <li><span (click)="openModal(item.value['id'])"> Devamını Oku</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+      </div><!-- @end site__wrapper -->
+
+      <div class="modal-article" *ngIf="toggleModal">
+        <div class="modal-header">
+          {{activeArticle['title']}}
+        </div>
+        <div class="modal-body">
+          {{activeArticle['content']}}
+        </div>
+        <div class="modal-footer">
+          <button class="btn " (click)="openModal()" style="background-color: #03BFB0;">
+            Kapat
+          </button>
+        </div>
+      </div>
+      <!-- End modal-->
+    </div>
+    <div class=" card col-md-12 pt-3 mt-3" style="top: 20px; border-width: 0px;">
+      <div class="col-md-12" style="color: #555;">
+        <h5 class="card-title text-center">SİBER ZORBALIK NEDİR?</h5>
+
+        <p>Siber zorbalık, dijital teknolojiler kullanılarak gerçekleştirilen zorbalıktır. Bu tür zorbalıklar sosyal
+          medyada, mesajlaşma platformlarında, oyun platformlarında ve cep telefonlarında görülebilir. Hedef seçilen
+          kişileri korkutmaya, kızdırmaya ya da utandırmaya yönelik olarak tekrarlanan bir davranıştır. Verilebilecek
+          örnekler</p>
+        <p>
+          <li class="card-text">
+            Sosyal medyada bir kişi hakkında yalanlar yaymak ya da utandırıcı fotoğraflar yayınlamak
+          </li>
+        </p>
+        <p>
+          <li class="card-text">
+            Mesajlaşma platformlarından incitici mesajlar ya da tehditler yollamak
+          </li>
+        </p>
+        <p>
+          <li class="card-text">
+            Başka birinin kimliğiyle başkalarına kötü mesajlar göndermek
+          </li>
+        </p>
+
+      </div>
+      <div class="text-center mt-4 pt-4" style="font-family:Georgia, 'Times New Roman', Times, serif ;">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/k4FF7KS6cZ0" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+      </div>
+    </div>
+
+    <div class=" card col-md-12 pt-4 mt-4" style="top: 20px; border-width: 0px;">
+      <div class="col-md-12" style="color: #555;">
+        <h5 class="card-title text-center">GÜÇLÜ ŞİFRE OLUŞTURMAK İÇİN 10 İPUCU</h5>
+
+        <p>İnternet ortamındaki art niyetli kişileri savuşturmanıza yardımcı olacak şifreler nasıl oluşturulur</p>
+        <p>
+          <li class="card-text">
+            Birkaç farklı hesap için aynı şifreyi asla kullanmayın
+          </li>
+        </p>
+        <p>
+          <li class="card-text">
+            Kişiye özgü tanımlayıcı terimler kullanmayın
+          </li>
+        </p>
+        <p>
+          <li class="card-text">
+            Yaygın kelime ve söz öbeklerinden sakının
+          </li>
+        </p>
+        <p>
+          <li class="card-text">
+            Farklı türde karakterler kullanın
+          </li>
+        </p>
+        <p>
+          <li class="card-text">
+            Uzun bir şifre belirleyin
+          </li>
+        </p>
+        <p>
+          <li class="card-text">
+            Bazı kelimeleri yanlış yazın
+          </li>
+        </p>
+        <p>
+          <li class="card-text">
+            Şifrenizi düzenli olarak değiştirin
+          </li>
+        </p>
+        <p>
+          <li class="card-text">
+            Şifrenizi asla paylaşmayın veya kaydetmeyin
+          </li>
+        </p>
+        <p>
+          <li class="card-text">
+            Şifre yöneticisi kullanın
+          </li>
+        </p>
+      </div>
+      <div class="text-center mt-4 pt-4" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;" >
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/coDzsnFPKZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+      </div >
+    </div>
+    

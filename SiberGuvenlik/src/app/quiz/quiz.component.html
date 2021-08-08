@@ -1,0 +1,39 @@
+<div class="container mt-sm-5 my-1">
+  <div class="question ml-sm-5 pl-sm-5 pt-2">
+    <div class="py-2 h5">
+      <b style="color: white;" #elQuestion> </b>
+    </div>
+    <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
+      <form class="example-form" #form="ngForm"  id="myform">
+        <label class="options" style="color: white;">
+          <span #elLabelOption1></span>
+          <input type="radio" name="radio[{{this.soruId}}]" (change)="sorucevaplandi(1)" #elLabelRadio1>
+          <span class="checkmark"></span>
+        </label>
+        <label class="options" style="color: white;">
+          <span #elLabelOption2></span>
+          <input type="radio" name="radio[{{this.soruId}}]" (change)="sorucevaplandi(2)" #elLabelRadio2>
+          <span class="checkmark"></span>
+        </label>
+        <label class="options" style="color: white;">
+          <span #elLabelOption3></span>
+          <input type="radio" name="radio[{{this.soruId}}]" (change)="sorucevaplandi(3)" #elLabelRadio3>
+          <span class="checkmark"></span>
+        </label>
+        <label class="options" style="color: white;">
+          <span #elLabelOption4></span>
+          <input type="radio" name="radio[{{this.soruId}}]" (change)="sorucevaplandi(4)" #elLabelRadio4>
+          <span class="checkmark"></span>
+        </label>
+      </form>
+    </div>
+    <div class="d-flex align-items-center pt-3" *ngIf="this.question">
+      <div class="ml-auto mr-sm-5" *ngIf="this.soruId < this.question.length">
+        <button class="btn btn-success" (click)="soruGetir()" >Sonraki</button>
+      </div>
+      <div class="ml-auto mr-sm-5" *ngIf="this.soruId == this.question.length">
+        <button class="btn btn-success" (click)="tamamla()">Tamamla</button>
+      </div>
+    </div>
+  </div>
+</div>

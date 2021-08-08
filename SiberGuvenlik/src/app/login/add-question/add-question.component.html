@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Yinka Enoch Adedokun">
+    <title>Soru Girişi</title>
+  </head>
+  <body class="pt-0 mt-0">
+    <!-- Main Content -->
+    <div class="container-fluid pt-1 mt-1">
+      <div class="row main-content bg-success text-center">
+        <div class="col-md-4 text-center company__info">          
+        </div>
+        <div class="col-md-8 col-xs-12 col-sm-12 login_form pt-3 ">
+          <div class="container-fluid">
+            <div class="row">
+              <h2>Soru Girişi</h2>
+            </div>
+            <div class="row">
+              <form [formGroup]="userQuestionForm" (ngSubmit)="addQuestions()" class="form-group">
+                <div class="row">
+                  <input type="text" name="soru" formControlName="question" id="soru" class="form__input" placeholder="Soru" >
+                </div>
+                <div class="row">
+                  <!-- <span class="fa fa-lock"></span> -->
+                  <input type="text" name="cevap1" formControlName="option1" id="cevap1" class="form__input" placeholder="Cevap 1" >
+                </div>
+                <div class="row">
+                  <input type="text" name="cevap2" id="cevap2" formControlName="option2" class="form__input" placeholder="Cevap 2" >
+                </div>
+                <div class="row">
+                  <!-- <span class="fa fa-lock"></span> -->
+                  <input type="text" name="cevap3" formControlName="option3" id="cevap3" class="form__input" placeholder="Cevap 3" >
+                </div>
+                <div class="row">
+                  <input type="text" name="cevap4" formControlName="option4" id="cevap4" class="form__input" placeholder="Cevap 4" >
+                </div>
+                <div class="row">
+                  <input type="text" name="dogrucevap" formControlName="correctOption" id="dogrucevap" class="form__input" placeholder="Doğru Cevap" >
+                </div>
+                <div>
+                  <input type="submit" value="Soru Ekle" class="btn">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+  
+  </body>
+</html>
